@@ -11,6 +11,8 @@ dependencies = [
     "ipykernel>=7.3.0",
     "openai>=1.0",
     "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "streamlit>=1.62.0",
 ]
 
 [project.scripts]
