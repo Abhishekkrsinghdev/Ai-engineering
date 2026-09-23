@@ -1,3 +1,4 @@
+
 from pathlib import Path
 
 
@@ -30,7 +31,7 @@ def looks_like_escaped_source(text: str) -> bool:
     if "\\n" not in text:
         return False 
     
-    return text.count("\\n") <= 1 
+    return text.count("\n") <= 1 
 
 
 def normalize_source_text(text: str) -> str:
@@ -81,3 +82,4 @@ def prepare_file_content(path: str, text: str) -> str:
     if suffix not in _MARKUP_SUFFIXES:
         prepared = unescape_html_entities(prepared)
     return prepared
+    
